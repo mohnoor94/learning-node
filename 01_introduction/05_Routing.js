@@ -1,5 +1,4 @@
 const http = require('http');
-const url = require('url');
 
 const server = http.createServer((request, response) => {
     const pathName = request.url;
@@ -22,6 +21,3 @@ const server = http.createServer((request, response) => {
 server.listen(8000, '127.0.0.1', () => {
     console.log('Listening to requests on port 8000');
 });
-
-// start the server (node 01_introduction/05_Routing.js)
-// then access the localhost url on port 8000 from your browser to see the result (http://127.0.0.1:8000/)
